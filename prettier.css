@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px;
+}
+#nav img {
+  width: 100px;
+}
+
+#nav #right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+#nav a {
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 0.9vw;
+  letter-spacing: -1px solid grey;
+  color: rgb(255, 255, 255);
+}
+#nav i {
+  margin-top: 3px;
+  font-size: 25px;
+}
+#home #hub {
+  width: 100%;
+  padding: 15vw 15vw;
+}
+#hub h1 {
+  font-weight: 400;
+  font-size: 1.3vw;
+  letter-spacing: -0.1px solid grey;
+}
+.heading {
+  display: flex;
+  gap: 40px;
+}
+#hub .heading h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  letter-spacing: -8px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 3px purple;
+}
+.desc {
+  padding: 5vw 15vw;
+}
+.desc p {
+  width: 70%;
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: -0.08vw;
+  color: #fff;
+  user-select: purple;
+}
+.desc p::selection {
+  color: black;
+  background-color: purple;
+}
+
+#events {
+  padding: 10vw 15vw;
+}
+#EHeading > h1 {
+  line-height: 1;
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: 400;
+}
+#EHeading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1.5px purple;
+}
+
+#Eimages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5vw;
+  height: 100vh;
+}
+#Fleft {
+  width: 45%;
+  height: inherit;
+
+  overflow: hidden;
+}
+#Fright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45%;
+  height: inherit;
+}
+#Fright .images {
+  width: 90%;
+  background-color: purple;
+  height: 90%;
+}
+.DEvents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+.DEvents h1 {
+  font-size: 2.5vw;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1.5vw 0;
+}
+.DEvents h4 {
+  opacity: 0.5;
+}
+.DEvents h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+
+#btndiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btndiv button {
+  padding: 1.3vw 2.5vw;
+  border-radius: 100px;
+  color: black;
+  border: 2px solid grey;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
