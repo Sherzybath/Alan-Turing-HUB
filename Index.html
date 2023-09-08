@@ -16,9 +16,11 @@
       rel="stylesheet"
       href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css"
     />
+    <link rel="stylesheet" href="loco.css" />
     <title>Document</title>
   </head>
   <body>
+    <div id="minicircle"></div>
     <div id="main">
       <div id="home">
         <div id="nav">
@@ -29,7 +31,7 @@
           <div id="right">
             <a href="">our showreel</a>
             <a href="">menu</a>
-            <button class="btn"><i class="ri-menu-5-line"></i></button>
+            <button class="magnet"><i class="ri-menu-5-line"></i></button>
           </div>
         </div>
         <div id="hub" class="hidden">
@@ -85,7 +87,23 @@
           <h1>Upcoming</h1>
           <h1>events</h1>
         </div>
-        <div id="second"></div>
+        <div id="second" class="hidden">
+          <div class="elem hidden">
+            <img src="Images/R.jpg" alt="Draw" />
+            <h1>HACKEYE</h1>
+            <h5>Date1</h5>
+          </div>
+          <div class="elem hidden">
+            <img src="Images/New_Me.png" alt="Draw" />
+            <h1>ICOSMIC</h1>
+            <h5>Date2</h5>
+          </div>
+          <div class="elem elemFinal hidden">
+            <img src="Images/Heart.gif" alt="Draw" />
+            <h1>TBD</h1>
+            <h5>Date3</h5>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -96,8 +114,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-    <script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="trial.js"></script>
   </body>
 </html>
