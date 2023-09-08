@@ -6,6 +6,10 @@
   font-family: "Rubik", sans-serif;
   color: #fff;
 }
+*::selection {
+  color: black;
+  background-color: purple;
+}
 html,
 body {
   width: 100%;
@@ -14,7 +18,7 @@ body {
 
 #main {
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 #home {
   width: 100%;
@@ -67,6 +71,11 @@ body {
   line-height: 1;
   color: transparent;
   -webkit-text-stroke: 3px purple;
+  transition: 0.4s;
+}
+
+#hub .heading h1:hover {
+  color: purple;
 }
 .desc {
   padding: 5vw 15vw;
@@ -78,10 +87,6 @@ body {
   letter-spacing: -0.08vw;
   color: #fff;
   user-select: purple;
-}
-.desc p::selection {
-  color: black;
-  background-color: purple;
 }
 
 #events {
@@ -96,6 +101,29 @@ body {
 #EHeading > h1:nth-child(2) {
   color: transparent;
   -webkit-text-stroke: 1.5px purple;
+  transition: 0.4s;
+}
+#EHeading > h1:nth-child(2):hover {
+  color: purple;
+}
+
+#FEvents {
+  padding: 5vw 15vw;
+}
+
+#FHeading > h1 {
+  line-height: 1;
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: 400;
+}
+#FHeading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1.5px purple;
+  transition: 0.4s;
+}
+#FHeading > h1:nth-child(2):hover {
+  color: purple;
 }
 
 #Eimages {
@@ -153,9 +181,28 @@ body {
 #btndiv button {
   padding: 1.3vw 2.5vw;
   border-radius: 100px;
-  color: black;
-  border: 2px solid grey;
+  color: rgb(189, 189, 189);
+  border: 2px solid #550276ea;
   font-size: 1vw;
   font-weight: 500;
   letter-spacing: -1px;
+  background-color: #550276ad;
+}
+.btn {
+  transition: transform 0.1s;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.7s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
 }
