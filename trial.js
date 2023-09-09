@@ -122,3 +122,11 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
   });
 });
+
+// SPLASH SCREEEENNNNN
+let intro = document.querySelector(".intro");
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    intro.style.top = "-100vh";
+  }, 2800);
+});
