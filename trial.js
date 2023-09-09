@@ -48,18 +48,14 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+var timeout;
+
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
 
-function circleMouseFollower(xscale, yscale) {
-  window.addEventListener("mousemove", function (dets) {
-    document.querySelector(
-      "#minicircle"
-    ).style.transform = `translate(${dets.clientX}px,${dets.clientY}px) scale(${xscale}, ${yscale})`;
-  });
-}
+//  CIRCLEEEEEEEEEEEEEE
 function circleChaptaKaro() {
   // define default scale value
   var xscale = 1;
@@ -87,9 +83,20 @@ function circleChaptaKaro() {
   });
 }
 
+function circleMouseFollower(xscale, yscale) {
+  window.addEventListener("mousemove", function (dets) {
+    document.querySelector(
+      "#minicircle"
+    ).style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`;
+  });
+}
+
 circleChaptaKaro();
 circleMouseFollower();
 
+// CIRCLEEEEE ENDDDD
+
+// IMG FOLLOWERRRR
 document.querySelectorAll(".elem").forEach(function (elem) {
   var rotate = 0;
   var diffrot = 0;
@@ -110,7 +117,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
       opacity: 1,
       ease: Power3,
       top: diff,
-      left: dets.clientX,
+      left: dets.clientX - 400,
       rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
     });
   });
