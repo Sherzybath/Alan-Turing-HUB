@@ -4,18 +4,26 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-family: "Rubik", sans-serif;
-  color: #fff;
+  color: var(--text-color);
 }
 *::selection {
   color: black;
-  background-color: purple;
+  background-color: #800080;
 }
 html,
 body {
   width: 100%;
   height: 100%;
 }
-
+/* COLOR */
+* {
+  --main-color: #0d161d;
+  --secondary-color: #8451f6;
+  --tertiary-color: #7c6396;
+  --quat-color: #800080;
+  --text-color: #fff;
+}
+/* COLOR END */
 #minicircle {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   width: 10px;
@@ -23,12 +31,12 @@ body {
   position: absolute;
   z-index: 99999;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--text-color);
 }
 
 #main {
   width: 100%;
-  background-color: black;
+  background-color: var(--main-color);
 }
 #home {
   width: 100%;
@@ -55,7 +63,7 @@ body {
   font-weight: 450;
   font-size: 0.9vw;
   letter-spacing: -1px solid grey;
-  color: rgb(255, 255, 255);
+  color: var(--text-color);
 }
 #nav i {
   margin-top: 3px;
@@ -80,25 +88,30 @@ body {
   letter-spacing: -8px;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 3px purple;
+  -webkit-text-stroke: 3px var(--quat-color);
   transition: 0.4s;
 }
 
 #hub .heading h1:hover {
-  color: purple;
+  color: var(--quat-color);
 }
 .desc {
   padding: 5vw 15vw;
+  background-color: var(--tertiary-color);
 }
 .desc p {
   width: 70%;
   font-size: 1.6vw;
   font-weight: 400;
   letter-spacing: -0.08vw;
-  color: #fff;
-  user-select: purple;
+  color: var(--text-color);
+  user-select: var(--tertiary-color);
 }
-
+.desc2 {
+  padding: 9.4vw 15vw;
+  background-image: url("Images/Trial2.png");
+  margin-bottom: 200px;
+}
 #events {
   padding: 10vw 15vw;
 }
@@ -110,11 +123,11 @@ body {
 }
 #EHeading > h1:nth-child(2) {
   color: transparent;
-  -webkit-text-stroke: 1.5px purple;
+  -webkit-text-stroke: 1.5px var(--secondary-color);
   transition: 0.4s;
 }
 #EHeading > h1:nth-child(2):hover {
-  color: purple;
+  color: var(--secondary-color);
 }
 
 #FEvents {
@@ -129,11 +142,11 @@ body {
 }
 #FHeading > h1:nth-child(2) {
   color: transparent;
-  -webkit-text-stroke: 1.5px purple;
+  -webkit-text-stroke: 1.5px var(--secondary-color);
   transition: 0.4s;
 }
 #FHeading > h1:nth-child(2):hover {
-  color: purple;
+  color: var(--secondary-color);
 }
 
 #Eimages {
@@ -158,7 +171,7 @@ body {
 }
 #Fright .images {
   width: 90%;
-  background-color: purple;
+  background-color: var(--secondary-color);
   height: 90%;
 }
 .DEvents {
@@ -177,26 +190,18 @@ body {
 }
 .DEvents h4 {
   opacity: 0.5;
+  padding-left: 4px;
 }
 .DEvents h3 {
   font-size: 1.4vw;
   font-weight: 400;
+  padding-left: 4px;
 }
 
 #btndiv {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#btndiv button {
-  padding: 1.3vw 2.5vw;
-  border-radius: 100px;
-  color: rgb(189, 189, 189);
-  border: 2px solid #550276ea;
-  font-size: 1vw;
-  font-weight: 500;
-  letter-spacing: -1px;
-  background-color: #550276ad;
 }
 .magnet {
   transition: transform 0.1s;
@@ -218,9 +223,9 @@ body {
 }
 
 #second {
-  color: #fff;
+  color: var(--text-color);
   padding-top: 200px;
-  background-color: black;
+  background-color: var(--main-color);
   width: 100%;
   height: 100vh;
 }
