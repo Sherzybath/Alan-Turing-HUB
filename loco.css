@@ -1,3 +1,26 @@
+
+@keyframes glow-purple {
+  0% {
+    color: var(--text-color);
+    text-shadow: 0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080;
+  }
+  50% {
+    color: #800080;
+    text-shadow: 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080;
+  }
+  100% {
+    color: var(--text-color);
+    text-shadow: 0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080;
+  }
+}
+
+/* Apply the animation on hover to specific elements you want to glow purple */
+#hub .heading h1:hover,
+#EHeading > h1:nth-child(2):hover,
+#FHeading > h1:nth-child(2):hover {
+  animation: glow-purple 1s infinite;
+}
+==============================
 html.has-scroll-smooth {
   overflow: hidden;
 }
@@ -78,4 +101,9 @@ html.has-scroll-dragging {
 [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+
+/* Align text to the left in #hub .heading */
+#hub .heading {
+  text-align: left;
 }
