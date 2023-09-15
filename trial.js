@@ -134,7 +134,6 @@ window.addEventListener("DOMContentLoaded", () => {
 // NAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVvv
 
 ("use strict");
-
 const body = document.body;
 const menu = body.querySelector(".menu");
 const menuItems = menu.querySelectorAll(".menu__item");
